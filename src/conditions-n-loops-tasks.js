@@ -429,11 +429,7 @@ function rotateMatrix(matrix) {
  */
 function sortByAsc(arr) {
   const newArr = arr;
-  const sortFunction = function (
-    arr2,
-    leftItem = 0,
-    rightItem = arr2.length - 1
-  ) {
+  const sortFunction = (arr2, leftItem = 0, rightItem = arr2.length - 1) => {
     if (leftItem >= rightItem) return;
 
     const medium = arr2[Math.floor((leftItem + rightItem) / 2)];
